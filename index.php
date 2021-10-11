@@ -10,12 +10,13 @@
   height:12px;
   background: #2191FB;
   border-radius: 50%;
-  box-shadow: 12px 0 #2191FB,-24px 0 #2191FB;
+  box-shadow: 40px 40px #2191FB,-24px 40px #2191FB;
+  box-shadow: 40px 40px #2191FB,-24px 40px #50A9FB;
   animation:d6 1s infinite linear alternate;
 }
 @keyframes d6 {
     50% {box-shadow: 12px 0 currentColor,-12px 0 currentColor}
-    100%{box-shadow: 24px 0 currentColor,-12px 0 currentColor}
+    100%{box-shadow: 24px 0 currentColor,-12px 0 #2191FB}
 }
 
 /**/
@@ -25,6 +26,7 @@ body {
   grid-auto-rows: 130px;
   place-items:center;
 }
+
 * {
   box-sizing: border-box;
 }
