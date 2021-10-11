@@ -8,9 +8,9 @@
   .dots-6 {
   width:12px;
   height:12px;
-  background: currentColor;
+  background: #2191FB;
   border-radius: 50%;
-  box-shadow: 12px 0 currentColor,-24px 0 currentColor;
+  box-shadow: 12px 0 #2191FB,-24px 0 #2191FB;
   animation:d6 1s infinite linear alternate;
 }
 @keyframes d6 {
