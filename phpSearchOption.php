@@ -31,7 +31,16 @@ $column = $_POST['column'];
 
 $search = $_POST['search'];
 
-require_once "config.php";
+$servername = "sql6.freemysqlhosting.net";
+$username = "sql6450823";
+$password = "bq5uI3Pkbc";
+$dbname = "sql6450823";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error){
+        die("Connection failed: ". $conn->connect_error);
+}
 
 $sql = "SELECT * FROM customers where $column like '%$search%'";
 
