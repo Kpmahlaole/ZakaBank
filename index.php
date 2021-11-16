@@ -1,42 +1,15 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Untitled</title>
-  <style type="text/css">
-  .dots-6 {
-  width:12px;
-  height:12px;
-  background: #2191FB;
-  border-radius: 50%;
-  box-shadow: 40px 40px #2191FB,-24px 40px #2191FB;
-  box-shadow: 40px 40px #2191FB,-24px 40px #50A9FB;
-  animation:d6 1s infinite linear alternate;
-}
-@keyframes d6 {
-    50% {box-shadow: 12px 0 currentColor,-12px 0 currentColor}
-    100%{box-shadow: 24px 0 currentColor,-12px 0 #2191FB}
-}
-
-/**/
-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-auto-rows: 130px;
-  place-items:center;
-}
-
-* {
-  box-sizing: border-box;
-}
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refresh</title>
 </head>
-
 <body>
 
-<div class="dots-6"></div>
+<?php include 'refresh.php';?>
 
 </body>
-
 </html>
+
