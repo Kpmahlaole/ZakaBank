@@ -20,23 +20,6 @@
 </head>
 <body>
 
-<div class="sidebar">
-        <a class="active" href="homepage.html">Home</a>
-        <a href="NewCustomer.html">New Customer</a>
-        <a href="editcustomer.html">Edit Customer</a>
-        <a href="deletecustomer.html">Delete Customer</a>
-        <a href="newaccount.html">New Account</a>
-        <a href="editaccount.html">Edit Account</a></a>
-        <a href="deleteaccount.html">Delete Account</a>
-        <a href="deposit.html">Deposit</a>
-        <a href="withdrawal.html">Withdrawal</a>
-        <a href="transferfunds.html">Transfer Funds</a>
-        <a href="changepasswords.html">Change Passwords</a>
-        <a href="balanceenquiry.html">Balance Enquiry</a>
-        <a href="ministatement.html">Mini Statement</a>
-        <a href="customisedstatements.html">Customised Statements</a>
-        <a href="logout.html">Log out</a>
-</div>
 
 <div class="content-homepage">
         <h2>Welcome to ZakaSoft Bank System</h2>
@@ -47,10 +30,10 @@ $search = $_POST['search'];
 $column = $_POST['column'];
 
 $search = $_POST['search'];
-$servername = "localhost";
-$username = "zakabak-admin";
-$password = "";
-$dbname = "Zakabank";
+$servername = "sql6.freemysqlhosting.net";
+$username = "sql6450823";
+$password = "bq5uI3Pkbc";
+$dbname = "sql6450823";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
