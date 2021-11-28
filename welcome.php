@@ -25,7 +25,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
-    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. welcome to GenesisPro.</h1>
     
 
 <div class="container">
@@ -46,7 +46,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <input type="text" class="form-control" name="search" placeholder="Search Customer" autocomplete="off" required="yes"
         aria-describedby="button-addon2" />
         <br />
-        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search Customer</button>
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2" class="btn btn-success">Search Customer</button>
       </div>
     </form>
 	
