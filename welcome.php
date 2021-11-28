@@ -44,7 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	  
       <div class="input-group mb-3">
         <input type="text" class="form-control" name="search" placeholder="Search Customer" autocomplete="off" required="yes"
-        aria-describedby="button-addon2" pattern="[A-Za-z]{3}"/>
+        aria-describedby="button-addon2" pattern=".{5,}" title="5 or more characters"/>
         <br />
         <button class="btn btn-outline-secondary" type="submit" id="button-addon2" class="btn btn-success">Search Customer</button>
       </div>
