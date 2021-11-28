@@ -18,7 +18,7 @@ border-color:black;
 
 
 <div class="content-homepage">
-        <h2>Welcome to ZakaSoft Bank System</h2>
+        <h2>Policy Search Results</h2>
 
 <?php
 
