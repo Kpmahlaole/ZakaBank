@@ -15,6 +15,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <title>Welcome</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
     <style>
         body{ font: 14px sans-serif; text-align: center; }
     </style>
@@ -22,21 +27,28 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     
-	<form action="phpSearchOption.php" method="post"><br>
-<input type="text" name="search" placeholder="Search Customer" autocomplete="off" required="yes"><br>
 
-Search Option: <select name="column"><br><br>
-    <option value="UserId">User ID</option>
-    <option value="CustomersID">Customers ID</option>
-    <option value="FirstName">First Name</option>
-    <option value="LastName">Last Name</option>
-    <option value="PhoneNumber">Phone Number</option>
-    <option value="Email">Email</option><br>
-    <option value="Gender">Gender</option><br>
-    <option value="PhysicalAddress">Physical Address</option><br>
-    <option value="Employer">Employer</option><br>
-<input type ="submit">
-	
+<div class="container">
+    <form action="phpSearchOption.php" method="post">
+      <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Search by:</label> 
+      <select class="form-select" id="inputGroupSelect01" name="column">
+        <option value="CustomersID">Customers ID</option>
+        <option value="FirstName">First Name</option>
+        <option value="LastName">Last Name</option>
+        <option value="PhoneNumber">Phone Number</option>
+        <option value="Email">Email</option>
+      </select>
+      <br/>
+	  </div>
+	  
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="search" placeholder="Search Customer" autocomplete="off" required="yes"
+        aria-describedby="button-addon2" />
+        <br />
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search Customer</button>
+      </div>
+    </form>
 	
 	<p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
