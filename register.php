@@ -48,9 +48,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Validate usertype
     if(empty(trim($_POST["usertype"]))){
-        $username_err = "Please enter a usertype.";
-    } elseif(!preg_match('/^[a-zA-Z]+$/', trim($_POST["username"]))){
-        $username_err = "Username can only contain letters.";
+        $usertype_err = "Please enter a usertype.";
+    } elseif(!preg_match('/^[a-zA-Z]+$/', trim($_POST["usertype"]))){
+        $usertype_err = "usertype can only contain letters.";
     } else{    
 
         // Prepare a select statement
