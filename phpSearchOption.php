@@ -6,14 +6,10 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <style type="text/css">
    table, th, td {
-    border: 1px solid red;
-    width: 80%;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    tr:hover {background-color: yellow;}
-    background-color: #04AA6D;
+
+border-style:solid;
+border-width:1px;
+border-color:black;
 
 }
 </style>
